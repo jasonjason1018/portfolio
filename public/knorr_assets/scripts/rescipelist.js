@@ -1,0 +1,1 @@
+"use strict";$(".recipeList__item").on("click mouseover",function(){$(".recipeList__item").removeClass("recipeList__item--active"),$(this).addClass("recipeList__item--active")});

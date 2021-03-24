@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$(".lightBox.winnerList").delay(1e3).fadeIn(200)}),$(".winnerList__close").on("click",function(){$(this).parents(".lightBox.winnerList").hide()});
