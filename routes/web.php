@@ -91,3 +91,8 @@ Route::get('/index', 'FukushimadatabaseController@index');
 Route::get('/skoda_ecard', 'SkodaecardController@index');
 Route::post('/result', 'SkodaecardController@result');
 Route::get('/card/{id}', 'SkodaecardController@card');
+//--------------------------------------------------------------------------
+//SideProject
+Route::get('/mySideProject', 'SideProjectController@test');
+Route::get('/mySideProject_index', 'SideProjectController@check_login');
+Route::get('/mySideProject_room', 'SideProjectController@room');
