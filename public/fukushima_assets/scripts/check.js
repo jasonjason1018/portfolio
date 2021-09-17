@@ -1,7 +1,7 @@
 "use strict";
 function checkPhone(){
 var phone = document.getElementById('userphone').value;
-var cellphone = /^09[0-9]{8}$/; 
+var cellphone = /^09[0-9]{8}$/;
 
 if(!(cellphone.test(phone))){
 	document.getElementById('userphone').value = "" 

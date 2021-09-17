@@ -58,7 +58,7 @@ class FukushimadatabaseController extends Controller
     public function logout(request $request){
       $request->session()->forget('user', '0');
       $value = $request->session()->all();
-      return view('fukushima_database.index');
+      return redirect('/');
       //return $value;
     }
 
