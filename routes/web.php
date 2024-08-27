@@ -18,25 +18,29 @@ Route::get('/', function () {
 });
 //--------------------------------------------------------------------------
 //knorr
-Route::get('/knorr', function () {
-    return view('knorr.index');
+Route::prefix('knorr')->group(function () {
+    Route::get('/index', function () {
+        return view('knorr.index');
+    });
+    Route::get('/questions', function () {
+        return view('knorr.questions');
+    });
+    Route::get('/recipelist', 'KnorrController@recipelist');
+    Route::get('/event', function () {
+        return view('knorr.event');
+    });
+    Route::get('/sales', 'KnorrController@sales');
+    Route::get('/result/{param}', function () {
+        return view('knorr.result');
+    });
+    Route::get('/knorr_form', function () {
+        return view('knorr.form');
+    });
+    Route::get('/recipe1/{id}', 'KnorrController@recipe1');
+    Route::get('/recipe2/{id}', 'KnorrController@recipe2');
+    Route::post('/congratulations', 'KnorrController@congratulations');
+    Route::get('/check/{Q1}/{Q2}', 'KnorrController@check');
 });
-Route::get('/questions', function () {
-    return view('knorr.questions');
-});
-Route::get('/recipelist', 'KnorrController@recipelist');
-Route::get('/event', function () {
-    return view('knorr.event');
-});
-Route::get('/sales', 'KnorrController@sales');
-Route::post('/knorr_result', 'KnorrController@result');
-Route::get('/knorr_form', function () {
-    return view('knorr.form');
-});
-Route::get('/recipe1/{id}', 'KnorrController@recipe1');
-Route::get('/recipe2/{id}', 'KnorrController@recipe2');
-Route::post('/congratulations', 'KnorrController@congratulations');
-Route::get('/check/{Q1}/{Q2}', 'KnorrController@check');
 
 //--------------------------------------------------------------------------
 //fukushima

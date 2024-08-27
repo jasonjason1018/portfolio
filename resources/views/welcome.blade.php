@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="/knorr">康寶</a>
+                    <a href="/knorr/index">康寶</a>
                     <a href="/fukushima">福島之旅</a>
                     <a href="/fukushima_database">福島之旅後台</a>
                     <a href="/fukushima_forest">福島森友會</a>
